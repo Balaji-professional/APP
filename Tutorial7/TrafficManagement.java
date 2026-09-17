@@ -1,0 +1,2 @@
+class Junction extends Thread {String status;Junction(String n,String s){super(n);status=s;}public void run(){for(int i=0;i<3;i++){System.out.println(getName()+" "+status);try{sleep(400);}catch(Exception e){}}}}
+public class TrafficManagement{public static void main(String[]a){new Junction("Junction1","Heavy").start();new Junction("Junction2","Normal").start();new Junction("Junction3","Low").start();}}
