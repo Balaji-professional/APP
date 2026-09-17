@@ -1,0 +1,1 @@
+class Student{String name="Balaji";}class Course{String name="Java";}public class CollegeManagement{public static void main(String[]a){System.out.println(new Student().name);System.out.println(new Course().name);}}
