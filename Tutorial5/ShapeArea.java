@@ -1,0 +1,1 @@
+abstract class Shape{abstract double calculateArea();}class Circle extends Shape{double r=5;double calculateArea(){return 3.14*r*r;}}class Rectangle extends Shape{double calculateArea(){return 10*5;}}public class ShapeArea{public static void main(String[] a){Shape s=new Circle();System.out.println(s.calculateArea());s=new Rectangle();System.out.println(s.calculateArea());}}
