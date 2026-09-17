@@ -1,0 +1,2 @@
+class ExamTask implements Runnable { String task; ExamTask(String t){task=t;} public void run(){for(int i=0;i<3;i++){System.out.println(Thread.currentThread().getName()+" "+task);try{Thread.sleep(500);}catch(Exception e){}}}}
+public class OnlineExamThreads { public static void main(String[] a){new Thread(new ExamTask("Timer"),"Time").start();new Thread(new ExamTask("Autosave"),"Save").start();new Thread(new ExamTask("Network"),"Network").start();}}
