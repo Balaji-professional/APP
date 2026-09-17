@@ -1,0 +1,3 @@
+class Doctor { private int id; private String name,spec; private double fee; Doctor(int i,String n,String s,double f){id=i;name=n;spec=s;fee=f;} void display(){System.out.println(name+" "+spec+" "+fee);} }
+class Patient { private int id,age; private String name,disease; Patient(int i,String n,String d,int a){id=i;name=n;disease=d;age=a;} void display(){System.out.println(name+" "+disease);} }
+public class HospitalManagement { public static void main(String[] a){Doctor d=new Doctor(1,"Dr.A","Cardio",500); Patient p=new Patient(1,"P1","Heart",20); d.display(); p.display();} }
