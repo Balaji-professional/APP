@@ -1,0 +1,4 @@
+class Vehicle{String vehicleNumber,brand;int speed;Vehicle(String n,String b,int s){vehicleNumber=n;brand=b;speed=s;}void displayDetails(){}}
+class Car extends Vehicle{int numberOfDoors;Car(){super("C101","Toyota",120);numberOfDoors=4;}void displayDetails(){System.out.println("Car "+brand+" "+numberOfDoors);}}
+class Bike extends Vehicle{boolean hasGear;Bike(){super("B101","Honda",100);hasGear=true;}void displayDetails(){System.out.println("Bike "+brand+" Gear:"+hasGear);}}
+public class VehiclePolymorphism{public static void main(String[]a){Vehicle v=new Car();v.displayDetails();v=new Bike();v.displayDetails();}}
