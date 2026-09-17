@@ -1,0 +1,2 @@
+class BankTask implements Runnable {String act;BankTask(String a){act=a;}public void run(){for(int i=1;i<=3;i++){System.out.println(Thread.currentThread().getName()+" "+act+" "+i);try{Thread.sleep(300);}catch(Exception e){}}}}
+public class BankingThreads{public static void main(String[]a){new Thread(new BankTask("Transaction"),"T1").start();new Thread(new BankTask("Balance"),"T2").start();new Thread(new BankTask("SMS"),"T3").start();}}
