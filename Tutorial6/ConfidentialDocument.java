@@ -1,0 +1,1 @@
+interface Confidential{}class Report implements Confidential{}class Note{}public class ConfidentialDocument{public static void main(String[]a){Object d=new Report();System.out.println(d instanceof Confidential);}}
